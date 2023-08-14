@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #fff;
+}
+
+img{
+    height: 5%;
+    width: 30%;
+    display: flex;
+    margin: 10px auto;
+}
+
+.title{
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: darkred;
+    /* border-bottom: 2px solid; */
+    /* padding: 12px 0; */
+
+}
+
+
+footer{
+      background: #eee;
+      padding: 20px;
+      text-align: right;
+      font-style: italic;
+      margin-top: 25px;
+ }
