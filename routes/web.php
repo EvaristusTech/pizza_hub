@@ -19,12 +19,13 @@ Route::get('/', function () {
 
 Route::get('/pizza', function () {
 
-    $pizza = [
-        'head' => 'Diamond',
-        'body' => 'pizza',
-        'price' => 10
+    $pizzas = [
+    ['head' => 'Diamond', 'body' => 'pizza'],
+    ['head' => 'chizzy', 'body' => 'sharwama'],
+    ['head' => 'chopping', 'body' => 'doughnuts'],
+    ['head' => 'uncle ruben', 'body' => 'fish']
     ];
-    return view('pizza', $pizza);
+    return view('pizza', ['pizza' => $pizzas]);
 });
 
 Route::get('/pizza/{id}', function ($id) {
