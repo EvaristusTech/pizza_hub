@@ -17,6 +17,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/pizza', function () {
+
+    $pizza = [
+        'head' => 'Diamond',
+        'body' => 'pizza',
+        'price' => 10
+    ];
+    return view('pizza', $pizza);
+});
+
 Route::get('/pizza/{id}', function ($id) {
     return view('details', ['id' => $id]);
 });
